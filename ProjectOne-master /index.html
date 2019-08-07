@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="music-video" content="Music videos!" />
+
+  <title>Ultimate Fan Page!</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <script src="https://apis.google.com/js/client.js?onload=init"></script> -->
+
+  <!--CSS!!! for web page -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="bandTest.js"></script>
+  <script src="lastfm.js"></script>
+  <script src="siema.min.js"></script>
+  <script src="https://use.fontawesome.com/567fc88304.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Ultimate Fan Page!</h1>
+      <p class="lead">Search below to generate a fan page for your favorite artist/band!</p>
+      <div class="content">
+        <div id="custom-search-input">
+          <div class="input-group mb-3">
+            <form id="search-form" name="search-form" onsubmit="return searchYoutubevideo();">
+              <input type="text" class="form-control" placeholder="Search...." id="artist-input" />
+                <button class="btn btn-info btn-lg" type="submit" id="button-search">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              <span class="input-group-btn">
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="track-card">Top Tracks</h1>
+          <div id="top-tracks"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="album-card">Top Albums</h5>
+        <div class="siema" id="top-albums">
+        </div>
+        <div id="carousel-buttons">
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="artist-card">Artist Bio</h5>
+        <p class="wiki-info">
+          </h5>
+          <div id="wikiresults"></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="youtube-card">Social Media Links</h5>
+        <p class="video-list"></p>
+        <div id="videoresults"></div>
+        <br>
+        <h5 class="songkick-card">Tour Dates & Tickets</h5>
+              <p class="songkick-info"></p>
+              <div id="songkickresults"></div>
+        <h5 class="songkick-card">Music Videos</h5>
+        <div id="results"></div>
+        <div id="buttons"></div>
+      </div>
+
+    </div>
+</body>
+
+</html>
